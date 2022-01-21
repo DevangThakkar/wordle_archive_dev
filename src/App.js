@@ -379,7 +379,7 @@ function App() {
           (
             <a onMouseDown={() => playDay(i)} className=
               {
-                classNames(active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm '+tempGameStateList[i-1])
+                classNames(active ? 'font-bold text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm '+tempGameStateList[i-1])
               }>{i+((tempGameStateList[i-1] == state.won) ? ' ✔' : ((tempGameStateList[i-1] == state.lost) ? ' ✘' : ''))}
             </a>
           )
@@ -569,7 +569,7 @@ function App() {
                           (
                             <a onMouseDown={() => playRandom()} className=
                               {
-                                classNames(active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm')
+                                classNames(active ? 'font-bold text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm')
                               }>Random
                             </a>
                           )
